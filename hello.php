@@ -1,5 +1,6 @@
 <?php
 
-$message = "Hello again!";
+$is_admin = true;
+$data = null;
 
-echo $message;
+var_dump($is_admin, $data);
