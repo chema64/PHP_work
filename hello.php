@@ -1,18 +1,25 @@
 <?php
 
-$day = "Tue";
+$array = [];
 
-switch ($day) {
-  case "Mon":
-    echo "Monday";
-    break;
-  case "Tue":
-    echo "Tuesday";
-    break;
-  case "Wed":
-    echo "Wednesday";
-    break;
-  default:
-    echo "No information available for that day.";
-    break;
+for ($i = 1; $i <= 10; $i++) {
+
+    if($i < 4) {
+        $array[$i] = "a";
+        echo $array[$i];
+        echo $i;
+        ##echo $array[$i]. ", " .$i;
+
+    }elseif ($i >= 4 && $i <= 7) {
+        $array[$i] = "b";
+        echo $array[$i];
+        echo $i;
+    }
+    elseif($i >= 8) {
+        $array[$i] = "c";
+        echo $array[$i];
+        echo $i;
+
+    }
+
 }
