@@ -47,4 +47,12 @@ $articles = [
   ["title" => "Read this!", "content" => "You must read this article!"]
 ];
 
+
+
 var_dump($articles[1]["title"]);
+
+$small_articles = ["First post", "Another post", "Read this!"];
+
+foreach ($small_articles as $test) {
+    echo $test, ", test ";
+}
