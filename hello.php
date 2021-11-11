@@ -1,13 +1,18 @@
 <?php
 
-$hour = 20;
+$day = "Tue";
 
-if($hour < 12) {
-  echo "Good morning";
-} elseif ($hour < 18) {
-  echo "Good afternoon";
-} elseif ($hour < 22) {
-  echo "Good evening";
-} else {
-  echo "Good night";
+switch ($day) {
+  case "Mon":
+    echo "Monday";
+    break;
+  case "Tue":
+    echo "Tuesday";
+    break;
+  case "Wed":
+    echo "Wednesday";
+    break;
+  default:
+    echo "No information available for that day.";
+    break;
 }
