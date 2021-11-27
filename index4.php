@@ -1,16 +1,7 @@
 <?php
 
-$db_host = "localhost";
-$db_name = "cms";
-$db_user = "cms_www";
-$db_pass = "Y3O/byd9[tTDL2k0";
+require 'includes/database.php';
 
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
-
-if (mysqli_connect_error()) {
-  echo mysqli_connect_error();
-  exit;
-}
 
 echo "connected successfully";
 
@@ -28,14 +19,9 @@ if($results === false) {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Fruit</title>
-    </head>
-    <body>
+<?php require 'includes/header.php'; ?>
 
-    <h1>Fruit</h1>
+
 
     <!-- put your code below this line -->
     <?php if (empty($articles)): ?>
@@ -46,7 +32,7 @@ if($results === false) {
 
               <li>
                 <article>
-                  <h2><?= $article['title']; ?></h2>
+                  <h2><a href="article.php?id=<?= $article['id'];?>"><?= $article['title']; ?></a></h2>
                   <p><?= $article['content']; ?></p>
                 </article>
               </li>
@@ -54,5 +40,5 @@ if($results === false) {
       <?php endforeach ?>
       </ol>
     <?php endif; ?>
-    </body>
-</html>
+
+<?php require 'includes/footer.php'; ?>
