@@ -2,8 +2,9 @@
 
 require 'includes/database.php';
 
+$conn = getDB();
 
-echo "connected successfully";
+
 
 $sql = "SELECT *
         FROM article
@@ -21,7 +22,7 @@ if($results === false) {
 
 <?php require 'includes/header.php'; ?>
 
-
+  <a href="new-article.php">New article</a>
 
     <!-- put your code below this line -->
     <?php if (empty($articles)): ?>
@@ -32,8 +33,9 @@ if($results === false) {
 
               <li>
                 <article>
-                  <h2><a href="article.php?id=<?= $article['id'];?>"><?= $article['title']; ?></a></h2>
-                  <p><?= $article['content']; ?></p>
+                  <h2><a href="article.php?id=<?= $article['id'];?>"><?=
+                  htmlspecialchars($article['title']); ?></a></h2>
+                  <p><?= htmlspecialchars($article['content']); ?></p>
                 </article>
               </li>
 
