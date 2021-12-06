@@ -20,7 +20,7 @@ function getDB()
     exit;
   }
 
-  echo "connected successfully";
+  echo "connected successfully <br>";
 
   return $conn;
 }
