@@ -33,6 +33,8 @@ else {
                 </article>
 
                 <a href="edit-article.php?id=<?= $article['id']; ?>">Edit</a>
+                <a href="delete-article.php?id=<?= $article['id']; ?>">Delete</a>
+
 
 
     <?php endif; ?>
