@@ -1,6 +1,7 @@
 <?php
 
 require 'includes/database.php';
+require 'includes/auth.php';
 
 session_start();
 
@@ -24,9 +25,10 @@ if($results === false) {
 
 <?php require 'includes/header.php'; ?>
 
-<?php if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in']) : ?>
+<?php if (isLoggedIn()): ?>
 
   <p>You are logged in. <a href="logout.php">Log out</a></p>
+  <p><a href="new-article.php">New article</a></p>
 
 <?php else: ?>
 
@@ -34,7 +36,7 @@ if($results === false) {
 
 <?php endif; ?>
 
-<a href="new-article.php">New article</a>
+
 
 
 
