@@ -25,6 +25,8 @@ if($results === false) {
 
 <?php require 'includes/header.php'; ?>
 
+<?php var_dump($_SESSION); ?>
+
 <?php if (isLoggedIn()): ?>
 
   <p>You are logged in. <a href="logout.php">Log out</a></p>
