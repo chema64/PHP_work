@@ -1,0 +1,2 @@
+<p>New Content</p>
+<button onclick="serverResOrig()">Original Content</button>

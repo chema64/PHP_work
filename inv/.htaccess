@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "invisible" 
+AuthUserFile "/home/aozhongq/.htpasswds/public_html/inv/passwd"
+Require user tanyaB

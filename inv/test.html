@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="zh-Hans">
+
+<head>
+	 <title>澳中桥，Tanya Barlow (英文名字)  谭雅·巴落 (中文名字)，普通话 英语 语言 辅导，澳大利亚 昆士兰州 汤斯维尔市</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical"  href="http://www.aozhongqiao.com/zh-hans/index.html">
+
+  <link rel="alternate"  href="http://www.aozhongqiao.com/index.html" hreflang="en">
+  <link rel="alternate"  href="http://www.aozhongqiao.com/zh-hans/index.html" hreflang="zh-hans">
+  
+  <meta name="description" content="一对一辅导 , 初级中文辅导 , 纠正英语发音 , 中国留学生英语辅导 , 中国商务人士英语辅导 , 中国专业人士英语辅导">
+
+  <meta name="google" content="notranslate">
+  
+  <!--BS Latest compiled and minified CSS -->
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></noscript>
+
+  <link rel="preload" href="../css/zh-hans/style.css" as="style" onload="this.rel='stylesheet'">
+
+  <noscript><link rel="stylesheet" href="../css/zh-hans/style.css"></noscript>
+
+  <script>
+
+		/*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+		(function(w){
+			"use strict";
+			/* exported loadCSS */
+			var loadCSS = function( href, before, media ){
+				// Arguments explained:
+				// `href` [REQUIRED] is the URL for your CSS file.
+				// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+					// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+				// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+				var doc = w.document;
+				var ss = doc.createElement( "link" );
+				var ref;
+				if( before ){
+					ref = before;
+				}
+				else {
+					var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+					ref = refs[ refs.length - 1];
+				}
+
+				var sheets = doc.styleSheets;
+				ss.rel = "stylesheet";
+				ss.href = href;
+				// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+				ss.media = "only x";
+
+				// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+				function ready( cb ){
+					if( doc.body ){
+						return cb();
+					}
+					setTimeout(function(){
+						ready( cb );
+					});
+				}
+				// Inject link
+					// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+					// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+				ready( function(){
+					ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+				});
+				// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+				var onloadcssdefined = function( cb ){
+					var resolvedHref = ss.href;
+					var i = sheets.length;
+					while( i-- ){
+						if( sheets[ i ].href === resolvedHref ){
+							return cb();
+						}
+					}
+					setTimeout(function() {
+						onloadcssdefined( cb );
+					});
+				};
+
+				function loadCB(){
+					if( ss.addEventListener ){
+						ss.removeEventListener( "load", loadCB );
+					}
+					ss.media = media || "all";
+				}
+
+				// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+				if( ss.addEventListener ){
+					ss.addEventListener( "load", loadCB);
+				}
+				ss.onloadcssdefined = onloadcssdefined;
+				onloadcssdefined( loadCB );
+				return ss;
+			};
+			// commonjs
+			if( typeof exports !== "undefined" ){
+				exports.loadCSS = loadCSS;
+			}
+			else {
+				w.loadCSS = loadCSS;
+			}
+		}( typeof global !== "undefined" ? global : this ));
+
+		/*! CSS rel=preload polyfill. Depends on loadCSS function. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT  */
+		(function( w ){
+		  // rel=preload support test
+		  if( !w.loadCSS ){
+		    return;
+		  }
+		  var rp = loadCSS.relpreload = {};
+		  rp.support = function(){
+		    try {
+		    	console.log("Preload supported: " + w.document.createElement( "link" ).relList.supports( "preload" ));
+		      return w.document.createElement( "link" ).relList.supports( "preload" );
+		    } catch (e) {
+		      return false;
+		    }
+		  };
+
+		  // loop preload links and fetch using loadCSS
+		  rp.poly = function(){
+		    var links = w.document.getElementsByTagName( "link" );
+		    for( var i = 0; i < links.length; i++ ){
+		      var link = links[ i ];
+		      if( link.rel === "preload" && link.getAttribute( "as" ) === "style" ){
+		        w.loadCSS( link.href, link );
+		        link.rel = null;
+		      }
+		    }
+		  };
+
+		  // if link[rel=preload] is not supported, we must fetch the CSS manually using loadCSS
+		  if( !rp.support() ){
+		  	console.log("preloadNotSupported");
+		    rp.poly();
+		    var run = w.setInterval( rp.poly, 300 );
+		    if( w.addEventListener ){
+		      w.addEventListener( "load", function(){
+		        rp.poly();
+		        w.clearInterval( run );
+		      } );
+		    }
+		    if( w.attachEvent ){
+		      w.attachEvent( "onload", function(){
+		        w.clearInterval( run );
+		      } )
+		    }
+		  }
+		}( this ));
+
+
+  </script>
+
+  <script></script><!-- here to ensure a non-blocking load still occurs in IE and Edge, even if scripts follow loadCSS in head -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer ></script>
+
+	<!-- BS Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
+
+	<script src="../js/modernizr-custom.js" async></script>
+
+</head>
+
+<body>
+
+		<!--BOOTSTRAP NAVBAR-->
+		<!--BOOTSTRAP NAVBAR-->
+		<!--BOOTSTRAP NAVBAR-->
+	    <nav class="navbar navbar-default navbar-fixed-top">
+	    	<div class="container">
+
+	    		<div class="navbar-header">
+
+	    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	    			  <span class="icon-bar"></span>
+	    			  <span class="icon-bar"></span>	
+	    			  <span class="icon-bar"></span>		
+	    			</button>
+
+	    		</div>
+
+	    		<div class="collapse navbar-collapse" id="myNavbar">
+		    		<ul class="nav navbar-nav navbar-left">
+		    			<li role="presentation" class="active"><a href="index.html">首页</a></li>
+		    			<li role="presentation"><a href="about.html">专业背景</a></li>
+		    			<li role="presentation"><a href="courses.html">语言辅导服务</a></li>
+		    			<li role="presentation" ><a href="qual.html">资格</a></li>
+		    			<li role="presentation"><a href="affiliations.html">所属 </a></li>
+		    			<li role="presentation"><a href="fees.html">费用</a></li>
+		    			<li role="presentation"><a href="contact.html">联系</a></li>
+		    		</ul>
+
+		    		<ul class="nav navbar-nav navbar-right">
+		    		  <li role="presentation"><a href="../index.html">EN 英文</a></li>
+		    		</ul>
+	    		</div>
+
+	    	</div>
+	    </nav>
+	  
+
+	<!--JUMBOTRON-->
+	<!--JUMBOTRON-->
+	<!--JUMBOTRON-->
+	<div class="jumbotron" >
+    <div class="container text-center">  	
+
+
+	
+
+    	<picture>
+  			<source type="image/webp" media="(min-width:768px)" srcset="../images/webp/400x140AozhongqiaV3.webp">
+  			<source type="image/webp" media="(max-width:767px)" srcset="../images/webp/290x102AozhongqiaV5.webp">
+  			<img id="homeLg" src="../images/400x140AozhongqiaV3.png" class="img-responsive center-block visible-lg visible-md visible-sm">
+  			<img id="homeSm"  src="../images/290x102AozhongqiaV5.png" class="img-responsive center-block visible-xs "  >
+			</picture>  	
+
+
+    	<h1 id="tanyaTitle" class="visible-lg visible-md visible-sm" >TANYA  <span>BARLOW <br class="visible-sm "> (谭雅·巴落)</span></h1>
+    	<h1 id="tanyaTitleXS" class="visible-xs" >TANYA  <span>BARLOW <br> (谭雅·巴落)</span> </h1>
+
+		    
+
+			
+			<h2 class="visible-lg visible-md visible-sm text-center">普通话/英语 语言辅导</h2>
+
+			<h3 class="visible-xs text-center">普通话/英语 语言辅导</h3>
+
+	  </div> 
+	</div>
+
+  <!--MAIN SECTION-->
+  <!--MAIN SECTION-->
+  <!--MAIN SECTION-->
+  <div  id="main" >
+     <div class="container">
+
+     <div id="homeLgMdTop" class="col-lg-12 visible-md visible-lg " ></div>
+     <div id="homeSmTop" class="col-sm-12  visible-sm" ></div>
+
+			<div  class="row">
+
+				<!--<picture>
+	  			<source type="image/webp" media="(max-width:767px)" srcset="../images/webp/414x81.webp">
+	  			<img id="mainXsImg" src="../images/414x81.png" class="img-responsive visible-xs">
+				</picture>-->
+				
+				
+				<div id="mainOuter1" class=" col-sm-2 col-lg-3 col-md-3 visible-sm visible-lg visible-md "></div>
+
+			  <div id="mainOuter2" class="class= col-xs-12 col-sm-8 col-lg-6 col-md-6">
+
+					<div id="mainContent2" >
+						<h2 class="visible-lg visible-md visible-sm text-center">一对一辅导</h2>
+			    	<h2 class="visible-lg visible-md visible-sm text-center">初级中文辅导</h2>
+			    	<h2 class="visible-lg visible-md visible-sm text-center">纠正英语发音</h2>
+			    	<h2 class="visible-lg visible-md visible-sm text-center">中国留学生英语辅导</h2>
+			    	<h2 class="visible-lg visible-md visible-sm text-center">中国商务人士英语辅导</h2>
+			    	<h2 class="visible-lg visible-md visible-sm text-center">中国专业人士英语辅导</h2>
+
+			    	<p class="visible-xs text-center">一对一辅导</p>
+			    	<p class="visible-xs text-center">初级中文辅导</p>
+			    	<p class="visible-xs text-center">纠正英语发音</p>
+			    	<p class="visible-xs text-center">中国留学生英语辅导</p>
+			    	<p class="visible-xs text-center">中国商务人士英语辅导</p>
+			    	<p class="visible-xs text-center">中国专业人士英语辅导</p>
+				  </div>
+
+			  </div>
+
+			  <div id="mainOuter3" class=" col-sm-2 col-lg-3 col-md-3 visible-sm visible-lg visible-md "></div>
+				
+      </div>
+
+      <div id="homeLgMdBottom" class="col-lg-12 visible-lg visible-md" ></div>
+      <div id="homeSmBottom" class="col-sm-12  visible-sm" ></div>
+
+		</div>
+	</div> 
+
+
+	<!--FOOTER SECTION-->
+  <!--FOOTER SECTION-->
+  <!--FOOTER SECTION-->
+	<div class="footer">
+		<div class="container">
+
+	  	<p>
+	  		&copy; 2016 澳中桥 Àozhōngqiáo (Australia-China bridge)
+	  	</p>
+
+		  <p class="text-right">
+	  		网站管理员  <a target="_blank" href="https://au.linkedin.com/in/jeremywiseman">Jeremy Wiseman</a> 
+  		</p>
+
+		</div>
+	</div>
+
+</body>
+</html>
